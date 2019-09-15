@@ -110,9 +110,9 @@ while i < gray.shape[0] - 1:
                 line = cleanwhitespaces(line)
                 im = Image.fromarray(line)
                 im = im.convert("L")
-                filename = 'C:\\Users\\Nikesh\\Desktop\\Split\\line' + str(linecount) + '.jpeg'
-                im.save(filename)
-                linecount += 1
+                #filename = 'C:\\Users\\Nikesh\\Desktop\\Split\\line' + str(linecount) + '.jpeg'
+                #im.save(filename)
+                #linecount += 1
                 r = api_call(im)
                 json_data = json.loads(r.text)
                 latexjson.append(r.json())
@@ -123,9 +123,9 @@ while i < gray.shape[0] - 1:
         line = cleanwhitespaces(line)
         im = Image.fromarray(line)
         im = im.convert("L")
-        filename = 'C:\\Users\\Nikesh\\Desktop\\Split\\line' + str(linecount) + '.jpeg'
-        im.save(filename)
-        linecount += 1
+        #filename = 'C:\\Users\\Nikesh\\Desktop\\Split\\line' + str(linecount) + '.jpeg'
+        #im.save(filename)
+        #linecount += 1
         r = api_call(im)
         json_data = json.loads(r.text)
         latexjson.append(r.json())
